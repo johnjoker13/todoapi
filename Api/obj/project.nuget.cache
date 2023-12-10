@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "rt6x5n7wD3+Add617CSHQZZqgdOvQBX7HBXVqRoLDZjhmuFUROQbGWDVOlZ/KfOtmeMSGg6BoLCK7Z1eSTWFpQ==",
+  "dgSpecHash": "sGHUhsCs77E57idO9eGt+tYy5f/F9UwK58lQuOt+g8tR8FIINmIM4BiUCXj/HewNpJyX2YmRDq/ZP/mHF+W97g==",
   "success": true,
   "projectFilePath": "/home/johnjoker/source/repos/todoapi/Api/Api.csproj",
   "expectedPackageFiles": [
+    "/home/johnjoker/.nuget/packages/mapster/7.4.0/mapster.7.4.0.nupkg.sha512",
+    "/home/johnjoker/.nuget/packages/mapster.core/1.2.1/mapster.core.1.2.1.nupkg.sha512",
+    "/home/johnjoker/.nuget/packages/mapster.dependencyinjection/1.0.1/mapster.dependencyinjection.1.0.1.nupkg.sha512",
     "/home/johnjoker/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/home/johnjoker/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "/home/johnjoker/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/home/johnjoker/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "/home/johnjoker/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",

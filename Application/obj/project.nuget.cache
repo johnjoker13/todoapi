@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/zSUrEUAWQ5+oFs4/pK4l0dL7Nt3bsBp1MqtuOjAOlgkgojhAJ/4sQHGdu8gSQdMBARn2RH7ie2624fCZCqf9A==",
+  "dgSpecHash": "Egz64HID0gIntd8XukTTMjl3fX4KA2n8gJUBikBDOvuPpLRrHWjRzLg6YugbKuTO3+2VWv3JcgZBylnr8VVOXw==",
   "success": true,
   "projectFilePath": "/home/johnjoker/source/repos/todoapi/Application/Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/johnjoker/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
+    "/home/johnjoker/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/johnjoker/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
