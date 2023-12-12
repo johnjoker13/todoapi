@@ -12,4 +12,4 @@ services:
       - POSTGRES_DB=tododb
 
 volumes:
-  postgres:
+  tododb:
