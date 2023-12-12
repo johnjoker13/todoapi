@@ -1,4 +1,4 @@
-namespace Contracts.Users;
+namespace Contracts;
 
 public record RegisterRequest(
     string Name,

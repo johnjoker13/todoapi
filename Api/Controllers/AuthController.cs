@@ -1,3 +1,4 @@
+using Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
@@ -8,7 +9,7 @@ public class AuthController : ControllerBase
 {
     [HttpPost]
     [Route("register")]
-    public async Task<IActionResult> Register()
+    public async Task<IActionResult> Register(RegisterRequest request)
     {
 
         return Ok();
