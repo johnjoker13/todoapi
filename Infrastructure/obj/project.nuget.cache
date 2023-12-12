@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XkYwpHcq7Lpvmg39Qx4y4g0WgYNwpgrEHWS4/lnDf8DUDr2vkBGuvz/ivyhCeaYeLiQ6ofVMQIPSM02mZYJpKQ==",
+  "dgSpecHash": "fxVXvH7Zl0FS4ieHKl+WVdtbT4IaZsLdB95zd66zELtpm1QFaJstaJlx4FoMVRRSffwMGqGmoS3ve9SRYJ8VnA==",
   "success": true,
   "projectFilePath": "/home/johnjoker/source/repos/todoapi/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
