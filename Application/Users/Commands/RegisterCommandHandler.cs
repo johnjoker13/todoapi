@@ -3,6 +3,7 @@ using MediatR;
 using Contracts;
 using Domain.Entites;
 using Infrastructure.Persistence;
+using Application.Common;
 
 namespace Application.Commands;
 
@@ -26,7 +27,7 @@ public class RegisterCommandHandler
 
         if (_userRepository.GetByEmail(command.Email) is not null)
         {
-            throw new Exception("User exists!");
+            throw new ConflictException($"Email: {command.Email} not available!");
         }
 
         var user = User.Create(
