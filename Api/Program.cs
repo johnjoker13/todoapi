@@ -1,28 +1,27 @@
+using Api.Common;
 using Api.DependencyInjection;
 using Application.DependencyInjection;
+using FluentValidation;
 using Infrastructure.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 {
     builder.Services
         .AddPresentantion()
-        .AddInfrastructure()
-        .AddApplication();
+        .AddApplication()
+        .AddInfrastructure(builder.Configuration);
 }
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+//app.UseHttpsRedirection();
 
-app.UseHttpsRedirection();
+//app.UseAuthorization();
 
-app.UseAuthorization();
+app.UseMiddleware<GlobalErrorHandler>();
 
 app.MapControllers();
+
+ValidatorOptions.Global.LanguageManager.Enabled = false;
 
 app.Run();
