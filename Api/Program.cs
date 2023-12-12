@@ -1,9 +1,13 @@
+using Api.DependencyInjection;
+using Application.DependencyInjection;
+using Infrastructure.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 {
     builder.Services
-    .AddSwaggerGen()
-    .AddEndpointsApiExplorer()
-    .AddControllers();
+        .AddPresentantion()
+        .AddInfrastructure()
+        .AddApplication();
 }
 
 var app = builder.Build();
