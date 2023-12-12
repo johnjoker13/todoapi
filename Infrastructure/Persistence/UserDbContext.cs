@@ -6,7 +6,13 @@ namespace Infrastructure.Persistence;
 
 public class UserDbContext : DbContext
 {
-    public DbSet<User> Users { get; set; } = null!;
+
+    public UserDbContext() : base() { }
+
+    public UserDbContext(DbContextOptions<UserDbContext> options)
+        : base(options)
+    {
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -15,5 +21,14 @@ public class UserDbContext : DbContext
                 Assembly
                     .GetExecutingAssembly()
             );
+
+        base.OnModelCreating(modelBuilder);
     }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        base.OnConfiguring(optionsBuilder);
+    }
+
+    public DbSet<User> Users { get; set; } = null!;
 }
