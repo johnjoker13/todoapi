@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Api.Controllers;
 
 [ApiController]
-[Route("api/v1/")]
+[Route("api/v1/auth")]
 public class AuthController : ControllerBase
 {
     private readonly ISender _mediator;
