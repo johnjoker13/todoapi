@@ -23,7 +23,7 @@ public class User
         Password = password;
     }
 
-    public static User CreateUser(
+    public static User Create(
         string name,
         string lastName,
         string email,
