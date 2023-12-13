@@ -3,6 +3,7 @@ using Application.Commands;
 using Contracts;
 using MapsterMapper;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
@@ -29,5 +30,25 @@ public class AuthController : ControllerBase
         var result = await _mediator.Send(command);
 
         return StatusCode(StatusCodes.Status201Created, result);
+    }
+
+    [HttpGet]
+    [Route("login")]
+    public async Task<IActionResult> Login(LoginRequest request)
+    {
+
+        var command = _mapper.Map<LoginQuery>(request);
+
+        var result = await _mediator.Send(command);
+
+        return Ok(_mapper.Map<LoginResponse>(result));
+    }
+
+    [HttpGet]
+    [Route("hello")]
+    [Authorize]
+    public string Greet()
+    {
+        return "Hello";
     }
 }

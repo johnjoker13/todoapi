@@ -2,11 +2,14 @@
 /home/johnjoker/source/repos/todoapi/Contracts/bin/Debug/net6.0/Contracts.dll
 /home/johnjoker/source/repos/todoapi/Contracts/bin/Debug/net6.0/ref/Contracts.dll
 /home/johnjoker/source/repos/todoapi/Contracts/bin/Debug/net6.0/Contracts.pdb
+/home/johnjoker/source/repos/todoapi/Contracts/bin/Debug/net6.0/Domain.dll
+/home/johnjoker/source/repos/todoapi/Contracts/bin/Debug/net6.0/Domain.pdb
 /home/johnjoker/source/repos/todoapi/Contracts/obj/Debug/net6.0/Contracts.csproj.AssemblyReference.cache
 /home/johnjoker/source/repos/todoapi/Contracts/obj/Debug/net6.0/Contracts.GeneratedMSBuildEditorConfig.editorconfig
 /home/johnjoker/source/repos/todoapi/Contracts/obj/Debug/net6.0/Contracts.AssemblyInfoInputs.cache
 /home/johnjoker/source/repos/todoapi/Contracts/obj/Debug/net6.0/Contracts.AssemblyInfo.cs
 /home/johnjoker/source/repos/todoapi/Contracts/obj/Debug/net6.0/Contracts.csproj.CoreCompileInputs.cache
+/home/johnjoker/source/repos/todoapi/Contracts/obj/Debug/net6.0/Contracts.csproj.CopyComplete
 /home/johnjoker/source/repos/todoapi/Contracts/obj/Debug/net6.0/Contracts.dll
 /home/johnjoker/source/repos/todoapi/Contracts/obj/Debug/net6.0/ref/Contracts.dll
 /home/johnjoker/source/repos/todoapi/Contracts/obj/Debug/net6.0/Contracts.pdb

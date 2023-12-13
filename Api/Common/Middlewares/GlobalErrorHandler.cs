@@ -28,6 +28,7 @@ public class GlobalErrorHandler
             response.StatusCode = error switch
             {
                 ConflictException e => (int)HttpStatusCode.Conflict,
+                InvalidCredentialsException e => (int)HttpStatusCode.BadRequest,
                 ValidationException e => (int)HttpStatusCode.BadRequest,
                 _ => (int)HttpStatusCode.InternalServerError,
             };
