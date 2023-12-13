@@ -43,12 +43,4 @@ public class AuthController : ControllerBase
 
         return Ok(_mapper.Map<LoginResponse>(result));
     }
-
-    [HttpGet]
-    [Route("hello")]
-    [Authorize]
-    public string Greet()
-    {
-        return "Hello";
-    }
 }
