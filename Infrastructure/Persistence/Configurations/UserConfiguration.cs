@@ -17,7 +17,7 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .ValueGeneratedNever();
 
         builder
-            .Property(x => x.Name)
+            .Property(x => x.FirstName)
             .HasMaxLength(50);
 
         builder

@@ -1,7 +1,7 @@
 namespace Contracts;
 
 public record RegisterRequest(
-    string Name,
+    string FirstName,
     string LastName,
     string Email,
     string Password

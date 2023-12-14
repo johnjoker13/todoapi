@@ -21,7 +21,7 @@ public class UserEntityCreationTest
         // Assert
         Assert.NotNull(user);
         Assert.IsType<User>(user);
-        Assert.Equal("John", user.Name);
+        Assert.Equal("John", user.FirstName);
         Assert.Equal("Doe", user.LastName);
         Assert.Equal("john.doe@email.com", user.Email);
     }

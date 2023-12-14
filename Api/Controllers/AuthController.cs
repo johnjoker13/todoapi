@@ -27,7 +27,9 @@ public class AuthController : ControllerBase
     {
 
         var command = _mapper.Map<RegisterCommand>(request);
-        var result = await _mediator.Send(command);
+        var commandSent = await _mediator.Send(command);
+
+        var result = _mapper.Map<RegisterResponse>(commandSent);
 
         return StatusCode(StatusCodes.Status201Created, result);
     }
