@@ -32,7 +32,7 @@ public static class DependencyInjectionRegister
     )
     {
         services.AddDbContext<UserDbContext>(options =>
-            options.UseNpgsql(configuration.GetConnectionString("Postgresql"))
+            options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"))
         );
 
         services.AddScoped<IUserRepository, UserRepository>();
