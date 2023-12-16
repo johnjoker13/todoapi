@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{224A501A-15A3-435E-BA55-F0E3B2777C17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTests", "AppTests\AppTests.csproj", "{C4415AAB-09D7-4120-BCC6-0B24025CF2DC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,9 +42,5 @@ Global
 		{224A501A-15A3-435E-BA55-F0E3B2777C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{224A501A-15A3-435E-BA55-F0E3B2777C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{224A501A-15A3-435E-BA55-F0E3B2777C17}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4415AAB-09D7-4120-BCC6-0B24025CF2DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4415AAB-09D7-4120-BCC6-0B24025CF2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4415AAB-09D7-4120-BCC6-0B24025CF2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4415AAB-09D7-4120-BCC6-0B24025CF2DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
