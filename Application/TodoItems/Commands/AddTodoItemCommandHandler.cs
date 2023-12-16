@@ -11,7 +11,9 @@ public class AddTodoItemCommandHandler
 
     private readonly ITodoItemRepository _todoItemRepository;
 
-    public AddTodoItemCommandHandler(ITodoItemRepository todoItemRepository)
+    public AddTodoItemCommandHandler(
+        ITodoItemRepository todoItemRepository
+    )
     {
         _todoItemRepository = todoItemRepository;
     }
