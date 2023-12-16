@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Persistence;
 
-public class UserDbContext : DbContext
+public class TodoDbContext : DbContext
 {
 
-    public UserDbContext() : base() { }
+    public TodoDbContext() : base() { }
 
-    public UserDbContext(DbContextOptions<UserDbContext> options)
+    public TodoDbContext(DbContextOptions<TodoDbContext> options)
         : base(options)
     {
     }

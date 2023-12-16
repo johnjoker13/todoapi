@@ -5,9 +5,9 @@ namespace Infrastructure.Persistence;
 public class TodoItemRepository : ITodoItemRepository
 {
 
-    private readonly UserDbContext _dbContext;
+    private readonly TodoDbContext _dbContext;
 
-    public TodoItemRepository(UserDbContext dbContext)
+    public TodoItemRepository(TodoDbContext dbContext)
     {
         _dbContext = dbContext;
     }

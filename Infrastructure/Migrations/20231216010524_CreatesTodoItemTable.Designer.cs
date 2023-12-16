@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Infrastructure.Migrations
 {
-    [DbContext(typeof(UserDbContext))]
+    [DbContext(typeof(TodoDbContext))]
     [Migration("20231216010524_CreatesTodoItemTable")]
     partial class CreatesTodoItemTable
     {

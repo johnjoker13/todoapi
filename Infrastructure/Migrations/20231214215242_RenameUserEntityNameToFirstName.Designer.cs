@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Infrastructure.Migrations
 {
-    [DbContext(typeof(UserDbContext))]
+    [DbContext(typeof(TodoDbContext))]
     [Migration("20231214215242_RenameUserEntityNameToFirstName")]
     partial class RenameUserEntityNameToFirstName
     {

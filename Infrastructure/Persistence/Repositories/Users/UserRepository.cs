@@ -4,9 +4,9 @@ namespace Infrastructure.Persistence;
 
 public class UserRepository : IUserRepository
 {
-    private readonly UserDbContext _context;
+    private readonly TodoDbContext _context;
 
-    public UserRepository(UserDbContext context)
+    public UserRepository(TodoDbContext context)
     {
         _context = context;
     }

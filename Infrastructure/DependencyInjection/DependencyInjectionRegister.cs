@@ -31,7 +31,7 @@ public static class DependencyInjectionRegister
         ConfigurationManager configuration
     )
     {
-        services.AddDbContext<UserDbContext>(options =>
+        services.AddDbContext<TodoDbContext>(options =>
             options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")!)
         );
 
