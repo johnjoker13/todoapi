@@ -17,4 +17,11 @@ public class TodoItemRepository : ITodoItemRepository
         _dbContext.TodoItems.Add(item);
         _dbContext.SaveChanges();
     }
+
+    public IEnumerable<TodoItem> GetAllByUserId(string userId)
+    {
+        return _dbContext.TodoItems
+            .Where(x => x.UserId == userId)
+            .ToList();
+    }
 }
