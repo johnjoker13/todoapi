@@ -1,4 +1,3 @@
-using System.Net;
 using Application.Commands;
 using Contracts;
 using MapsterMapper;
@@ -8,9 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
 
-[ApiController]
-[Route("api/v1/auth")]
-public class AuthController : ControllerBase
+[AllowAnonymous]
+public class AuthController : MainController
 {
     private readonly ISender _mediator;
     private readonly IMapper _mapper;
@@ -22,7 +20,7 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost]
-    [Route("register")]
+    [Route("auth/register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
 
@@ -35,7 +33,7 @@ public class AuthController : ControllerBase
     }
 
     [HttpGet]
-    [Route("login")]
+    [Route("auth/login")]
     public async Task<IActionResult> Login(LoginRequest request)
     {
 

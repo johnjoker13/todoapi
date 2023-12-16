@@ -32,10 +32,11 @@ public static class DependencyInjectionRegister
     )
     {
         services.AddDbContext<UserDbContext>(options =>
-            options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"))
+            options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")!)
         );
 
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<ITodoItemRepository, TodoItemRepository>();
 
         return services;
     }
