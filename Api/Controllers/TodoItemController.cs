@@ -34,4 +34,15 @@ public class TodoItemController : MainController
         return StatusCode(StatusCodes.Status201Created, result);
     }
 
+    [HttpGet]
+    [Route("todo/getall-by-userid")]
+    public async Task<IActionResult> GetAllByUserId(GetAllTodoItemsByUserIdRequest request)
+    {
+        var query = _mapper.Map<GetAllTodoItemsByUserIdQuery>(request);
+        var commandSent = await _mediator.Send(query);
+        var result = _mapper
+            .Map<IEnumerable<GetAllTodoItemsByUserIdResponse>>(commandSent);
+        return Ok(result);
+    }
+
 }

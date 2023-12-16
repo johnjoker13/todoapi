@@ -21,19 +21,19 @@ public class LoginQueryHandler
         _jwtGenerator = jwtGenerator;
     }
 
-    public async Task<LoginResult> Handle(LoginQuery request, CancellationToken cancellationToken)
+    public async Task<LoginResult> Handle(LoginQuery query, CancellationToken cancellationToken)
     {
         await Task.CompletedTask;
 
 
 
-        if (_userRepository.GetByEmail(request.Email) is not User user)
+        if (_userRepository.GetByEmail(query.Email) is not User user)
         {
-            throw new InvalidCredentialException($"User with email: {request.Email} does not exists");
+            throw new InvalidCredentialException($"User with email: {query.Email} does not exists");
         }
 
 
-        if (BC.Verify(request.Password, user.Password) is not true)
+        if (BC.Verify(query.Password, user.Password) is not true)
         {
             throw new InvalidCredentialException("Password is incorrect.");
         }
