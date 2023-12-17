@@ -24,6 +24,9 @@ public class RegisterCommandHandlerUnitTest
     public async void GivenRegisterCommand_WhenValid_AddsAndReturnsVoid()
     {
         // Arrange
+        mockRepository
+            .Setup(x => x.Create(It.IsAny<User>()))
+            .Callback(() => { return; });
 
         var command = new RegisterCommand(
             "John",

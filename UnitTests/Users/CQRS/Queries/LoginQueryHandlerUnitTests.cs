@@ -38,7 +38,8 @@ public class LoginQueryHandlerUnitTests
             "$2a$11$J5lXR8Oh/3l7NEDYFa6maencOLnDHdLAU8Y6IT1TnvFTfqpdzleX6"
         );
 
-        mockRepository.Setup(x => x.GetByEmail(It.IsAny<string>()))
+        mockRepository
+            .Setup(x => x.GetByEmail(It.IsAny<string>()))
             .Returns(user);
 
         var handler = new LoginQueryHandler(mockRepository.Object, mockJwtGenerator.Object);

@@ -11,9 +11,6 @@ public static class IUserRepositoryMock
 
         var mock = new Mock<IUserRepository>();
 
-        mock.Setup(x => x.Create(It.IsAny<User>()))
-            .Callback(() => { return; });
-
         return mock;
     }
 }
