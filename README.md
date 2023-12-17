@@ -1,0 +1,37 @@
+# To-do API
+
+A REST API built with ASP.NET CORE which exposes routes to manipulate users and their tasks.
+
+## Knowledge applied
+  * SOLID
+  * CLEAN/ONION ARCHITECTURE
+  * CQRS
+  * DATABASE DESIGN AND MODELING
+  * REST
+  * DESIGN PATTERNS
+  * UNIT AND INTEGRATION TESTS
+  * CONTAINERIZATION
+  * AUTHENTICATION AND AUTHORIZATION
+
+## Technologies
+  * .NET 6 RUNTIME
+  * ASP.NET CORE
+  * POSTGRESQL
+  * DOCKER
+  * MEDIATR
+  * MAPSTER
+  * ENTITYFRAMEWORK CORE
+  * FLUENTVALIDATION
+  * XUNIT
+  * JWT
+  * BCRYPT
+
+## Next Steps
+  * DEPLOY
+  * ADD CI/CD
+  * ADD CACHE
+  * TURN RESTFUL?
+  * ADD DOMAIN DRIVEN DESIGN
+  * ADD LOGGING
+
+

@@ -1,3 +1,4 @@
+using System.Reflection;
 using Api.Common;
 using Api.DependencyInjection;
 using Application.DependencyInjection;
@@ -14,7 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
 app.UseAuthentication();
 

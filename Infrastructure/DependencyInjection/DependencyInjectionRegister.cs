@@ -1,3 +1,4 @@
+using System.Reflection;
 using System.Text;
 using Application.Common;
 using Infrastructure.Auth;
@@ -31,8 +32,13 @@ public static class DependencyInjectionRegister
         ConfigurationManager configuration
     )
     {
+        configuration
+            .AddEnvironmentVariables()
+            .AddUserSecrets(Assembly.GetExecutingAssembly(), true);
+
+        var connectionString = configuration["ConnectionStrings__DefaultConnection"];
         services.AddDbContext<TodoDbContext>(options =>
-            options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")!)
+            options.UseNpgsql(connectionString!)
         );
 
         services.AddScoped<IUserRepository, UserRepository>();
@@ -63,7 +69,7 @@ public static class DependencyInjectionRegister
                  ValidIssuer = jwtSettings.Issuer,
                  ValidAudience = jwtSettings.Audience,
                  IssuerSigningKey = new SymmetricSecurityKey(
-                     Encoding.UTF8.GetBytes(jwtSettings.Secret))
+                     Encoding.UTF8.GetBytes(configuration["JwtSettings:Secret"]!))
              });
 
 
