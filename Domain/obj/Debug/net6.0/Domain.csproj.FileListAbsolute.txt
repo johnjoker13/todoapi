@@ -9,3 +9,4 @@
 /home/johnjoker/source/repos/todoapi/Domain/obj/Debug/net6.0/Domain.dll
 /home/johnjoker/source/repos/todoapi/Domain/obj/Debug/net6.0/ref/Domain.dll
 /home/johnjoker/source/repos/todoapi/Domain/obj/Debug/net6.0/Domain.pdb
+/home/johnjoker/source/repos/todoapi/Domain/obj/Debug/net6.0/Domain.csproj.AssemblyReference.cache
