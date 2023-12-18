@@ -29,17 +29,22 @@ A REST API built with ASP.NET CORE which exposes routes to manipulate users and 
 
   ### Auth/User Endpoints
 
-    **Register an user**
+    **POST - Register an user**
       http://localhost:5000/api/v1/auth/register (local)
       http://localhost:5009/api/v1/auth/register (Docker)
 
-    **Login**
+    **GET - Login**
       http://localhost:5000/api/v1/auth/login (local)
       http://localhost:5009/api/v1/auth/login (Docker)
 
   ### To-do Endpoints(Copy the Bearer JWT Token retrieved from login and paste in request headers)
 
-    **Get All To-do Items**
+    **POST - Add To-do Item**
+      http://localhost:5000/api/v1/todo/add-item (local)
+      http://localhost:5009/api/v1/todo/add-item (Docker)
+
+
+    **GET - Get All To-do Items**
       http://localhost:5000/api/v1/todo/getall-by-userid (local)
       http://localhost:5009/api/v1/todo/getall-by-userid (Docker)
 
