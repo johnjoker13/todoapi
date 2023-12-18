@@ -36,7 +36,10 @@ public static class DependencyInjectionRegister
             .AddEnvironmentVariables()
             .AddUserSecrets(Assembly.GetExecutingAssembly(), true);
 
-        var connectionString = configuration["ConnectionStrings__DefaultConnection"];
+        // DEV
+        var connectionString = configuration.GetConnectionString("DefaultConnection");
+
+        //var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
         services.AddDbContext<TodoDbContext>(options =>
             options.UseNpgsql(connectionString!)
         );

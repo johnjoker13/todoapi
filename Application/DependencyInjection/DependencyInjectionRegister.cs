@@ -16,11 +16,9 @@ public static class DependencyInjectionRegister
                     .RegisterServicesFromAssembly(
                         typeof(DependencyInjectionRegister).Assembly
                     )
-            );
-
-        services.AddScoped(
-            typeof(IPipelineBehavior<,>),
-            typeof(ValidationBehaviour<,>));
+            )
+            .AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehaviour<,>))
+            .AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
 
         services
             .AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
