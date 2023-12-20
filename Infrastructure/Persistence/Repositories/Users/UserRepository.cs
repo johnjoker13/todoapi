@@ -26,4 +26,11 @@ public class UserRepository : IUserRepository
     {
         return _context.Users.SingleOrDefault(x => x.Id == id);
     }
+
+    public User? UpdateFirstName(User user, string firstName)
+    {
+        user.FirstName = firstName;
+        _context.SaveChanges();
+        return user;
+    }
 }

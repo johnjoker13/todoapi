@@ -8,4 +8,6 @@ public interface IUserRepository
     User? GetByEmail(string email);
 
     User? GetById(string id);
+
+    User? UpdateFirstName(User user, string firstName);
 }

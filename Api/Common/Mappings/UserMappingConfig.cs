@@ -18,5 +18,9 @@ public class UserMappingConfig : IRegister
         config.NewConfig<LoginResult, LoginResponse>()
             .Map(dest => dest.Token, src => src.Token)
             .Map(dest => dest, src => src.User);
+
+        config.NewConfig<UpdateFirstNameRequest, UpdateFirstNameCommand>();
+        config.NewConfig<CommonUserResult, CommonUserResponse>()
+            .Map(dest => dest, src => src.User);
     }
 }

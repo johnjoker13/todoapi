@@ -37,6 +37,10 @@ A REST API built with ASP.NET CORE which exposes routes to manipulate users and 
       http://localhost:5000/api/v1/auth/login (local)
       http://localhost:5009/api/v1/auth/login (Docker)
 
+    **PATCH - Updates First Name**
+      http://localhost:5000/api/v1/user/update-firstname (local)
+      http://localhost:5009/api/v1/user/update-firstname (Docker)
+
   ### To-do Endpoints(Copy the Bearer JWT Token retrieved from login and paste in request headers)
 
     **POST - Add To-do Item**
