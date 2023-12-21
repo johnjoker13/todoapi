@@ -2,7 +2,6 @@
 /home/johnjoker/source/repos/todoapi/Domain/bin/Debug/net6.0/Domain.dll
 /home/johnjoker/source/repos/todoapi/Domain/bin/Debug/net6.0/ref/Domain.dll
 /home/johnjoker/source/repos/todoapi/Domain/bin/Debug/net6.0/Domain.pdb
-/home/johnjoker/source/repos/todoapi/Domain/obj/Debug/net6.0/Domain.csproj.AssemblyReference.cache
 /home/johnjoker/source/repos/todoapi/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
 /home/johnjoker/source/repos/todoapi/Domain/obj/Debug/net6.0/Domain.AssemblyInfoInputs.cache
 /home/johnjoker/source/repos/todoapi/Domain/obj/Debug/net6.0/Domain.AssemblyInfo.cs
