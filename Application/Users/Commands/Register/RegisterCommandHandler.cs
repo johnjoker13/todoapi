@@ -8,7 +8,7 @@ using Application.Common;
 namespace Application.Commands;
 
 public class RegisterCommandHandler
-    : IRequestHandler<RegisterCommand, RegisterResult>
+    : IRequestHandler<RegisterCommand, CommonUserResult>
 {
 
     private readonly IUserRepository _userRepository;
@@ -18,7 +18,7 @@ public class RegisterCommandHandler
         _userRepository = userRepository;
     }
 
-    public async Task<RegisterResult> Handle(
+    public async Task<CommonUserResult> Handle(
         RegisterCommand command,
         CancellationToken cancellationToken
     )
@@ -39,7 +39,7 @@ public class RegisterCommandHandler
 
         _userRepository.Create(user);
 
-        return new RegisterResult(
+        return new CommonUserResult(
             user
         );
     }

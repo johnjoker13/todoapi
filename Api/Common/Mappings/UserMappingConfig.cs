@@ -10,9 +10,6 @@ public class UserMappingConfig : IRegister
     {
         config.NewConfig<RegisterRequest, RegisterCommand>();
 
-        config.NewConfig<RegisterResult, RegisterResponse>()
-            .Map(dest => dest, src => src.User);
-
         config.NewConfig<LoginRequest, LoginQuery>();
 
         config.NewConfig<LoginResult, LoginResponse>()
@@ -20,6 +17,7 @@ public class UserMappingConfig : IRegister
             .Map(dest => dest, src => src.User);
 
         config.NewConfig<UpdateFirstNameRequest, UpdateFirstNameCommand>();
+
         config.NewConfig<CommonUserResult, CommonUserResponse>()
             .Map(dest => dest, src => src.User);
     }

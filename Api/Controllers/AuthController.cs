@@ -27,7 +27,7 @@ public class AuthController : MainController
         var command = _mapper.Map<RegisterCommand>(request);
         var commandSent = await _mediator.Send(command);
 
-        var result = _mapper.Map<RegisterResponse>(commandSent);
+        var result = _mapper.Map<CommonUserResponse>(commandSent);
 
         return StatusCode(StatusCodes.Status201Created, result);
     }

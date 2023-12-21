@@ -42,7 +42,7 @@ public class RegisterCommandHandlerUnitTest
 
         // Assert
         Assert.NotNull(result);
-        Assert.IsType<RegisterResult>(result);
+        Assert.IsType<CommonUserResult>(result);
         Assert.IsType<User>(result.User);
         Assert.Equal("John", result.User.FirstName);
         Assert.Equal("Doe", result.User.LastName);
