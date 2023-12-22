@@ -10,6 +10,8 @@ COPY Contracts/*.csproj ./Contracts/
 COPY Domain/*.csproj ./Domain/
 COPY Infrastructure/*.csproj ./Infrastructure/
 COPY UnitTests/*.csproj ./UnitTests/
+COPY IntegrationTests/*.csproj ./IntegrationTests/
+
 
 # Restore as distinct layers
 RUN dotnet restore
@@ -20,6 +22,7 @@ COPY Contracts/. ./Contracts/
 COPY Domain/. ./Domain/
 COPY Infrastructure/. ./Infrastructure/
 COPY UnitTests/. ./UnitTests/
+COPY IntegrationTests/. ./IntegrationTests/
 
 # Build and publish a release
 WORKDIR /App/Api
